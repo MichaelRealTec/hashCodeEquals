@@ -1,5 +1,7 @@
 package application;
 
+import entities.Client;
+
 public class Program {
 	public static void main(String[] args) {
 		// São operações da clase Object utilizadasa para comparar se um objeto é igual a outro
@@ -7,14 +9,12 @@ public class Program {
 		// hashCode: rápido, porém resposta positiva não é 100%
 		// Tipos comuns (String, Date, Integer, Double, etc.) já possuem implementação para essas operações. Classes personalizadas precisam sobrepô-las.
 		
-		String a = "Maria";
-		String b = "Alex";
+		Client c1 = new Client("Maria", "maria@gmail.com");
+		Client c2 = new Client("Maria", "alex@gmail.com"); // Observação Comparação somente com o nome
 		
-		//System.out.println(a.equals(b)); // Resposta = false 
-		// motivo porque o String a não é igual ao String b
+		System.out.println(c1.hashCode());
+		System.out.println(c2.hashCode());
+		System.out.println(c1.equals(c2));
 		
-		// HashCode é o método que retorna um número representando um código gerado a partir das informações do objeto.
-		System.out.println(a.hashCode());
-		System.out.println(b.hashCode());
 	}
 }
