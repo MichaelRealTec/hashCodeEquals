@@ -11,10 +11,14 @@ public class Program {
 		
 		Client c1 = new Client("Maria", "maria@gmail.com");
 		Client c2 = new Client("Maria", "maria@gmail.com"); // Observação se os dois são iguais é verdadeiro o argumento
+		
+		String s1 = "Test";
+		String s2 = "Test";
+		
 		System.out.println(c1.hashCode());
 		System.out.println(c2.hashCode());
 		System.out.println(c1.equals(c2));
 		System.out.println(c1 == c2); // Deste modo não compara o conteudo mas as referências de memória por isto a resposta é false.
-		
+		System.out.println(s1 == s2); // Reposta é true porque o compilador da um tratamento espicial para literais
 	}
 }
