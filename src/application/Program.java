@@ -10,8 +10,11 @@ public class Program {
 		String a = "Maria";
 		String b = "Alex";
 		
-		System.out.println(a.equals(b)); // Resposta = false 
+		//System.out.println(a.equals(b)); // Resposta = false 
+		// motivo porque o String a não é igual ao String b
 		
-		
+		// HashCode é o método que retorna um número representando um código gerado a partir das informações do objeto.
+		System.out.println(a.hashCode());
+		System.out.println(b.hashCode());
 	}
 }
