@@ -14,6 +14,7 @@ public class Program {
 		System.out.println(c1.hashCode());
 		System.out.println(c2.hashCode());
 		System.out.println(c1.equals(c2));
+		System.out.println(c1 == c2); // Deste modo não compara o conteudo mas as referências de memória por isto a resposta é false.
 		
 	}
 }
