@@ -10,8 +10,7 @@ public class Program {
 		// Tipos comuns (String, Date, Integer, Double, etc.) já possuem implementação para essas operações. Classes personalizadas precisam sobrepô-las.
 		
 		Client c1 = new Client("Maria", "maria@gmail.com");
-		Client c2 = new Client("Maria", "alex@gmail.com"); // Observação Comparação o nome E TAMBÉM O EMAIL
-		// MOSTRA QUE É FALSE PORQUE OS EMAILS NÃO SÃO IGUAIS
+		Client c2 = new Client("Maria", "maria@gmail.com"); // Observação se os dois são iguais é verdadeiro o argumento
 		System.out.println(c1.hashCode());
 		System.out.println(c2.hashCode());
 		System.out.println(c1.equals(c2));
